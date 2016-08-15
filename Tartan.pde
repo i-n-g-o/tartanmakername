@@ -161,6 +161,8 @@ class Tartan {
     for (int i=0; i<stripes; i++) {
       int w=getNum(name.toLowerCase().charAt(i));
       
+      print(w + " ");
+      
       // select color (different from last color)
       int c=int(random(0, palette.length));
       if (enforceNewColor) {
@@ -174,6 +176,7 @@ class Tartan {
       stripecolors[i]=c;
       totalwidth+=w;      
     }
+    println();
     
 
     //--------------------------------------------
@@ -201,6 +204,8 @@ class Tartan {
     for (int i=0; i<rows; i++) {
       int w=getNum(name2.toLowerCase().charAt(i));
       
+      print(w + " ");
+      
       // select color (different from last color)
       int c=int(random(0, palette.length));
       if (enforceNewColor) {
@@ -214,6 +219,7 @@ class Tartan {
       rowcolors[i]=c;
       rowtotalwidth+=w;      
     }
+    println();
 
 
     //--------------------------------------------
